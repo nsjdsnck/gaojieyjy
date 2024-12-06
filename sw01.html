@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW01微型微量润滑系统</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.SuperSlide.js"></script>
+    <script src="js/NSW_Index.js"></script>
+
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            width: 320px; 
+            height: 320px; 
+            border-radius: 10px; 
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+            margin-right: 40px;
+        }
+        .info {
+            flex-grow: 1;
+            min-width: 400px; 
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px; 
+            border-bottom: 2px solid #007bff; 
+            padding-bottom: 8px; 
+        }
+        p, a {
+            margin: 5px 0;
+            color: #555;
+            font-size: 16px; 
+        }
+        .button-container {
+            margin-top: 20px; 
+        }
+        a.button {
+            background-color: #28a745; 
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 10px 5px 0; 
+            border-radius: 5px; 
+            width: 150px; /* 固定宽度 */
+            transition: background-color 0.3s;
+        }
+        a.button:hover {
+            background-color: #218838; 
+        }
+        .button.contact {
+            background-color: #007bff; 
+        }
+        .button.contact:hover {
+            background-color: #0056b3; 
+        }
+        .contact-info {
+            margin-bottom: 20px; 
+        }
+        .table-container {
+            width: 100%; 
+            margin-top: 30px; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 10px; 
+        }
+        th, td {
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: center; 
+        }
+        th {
+            background-color: #007bff; 
+            color: white; 
+        }
+        .header {
+            font-size: 22px; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+            text-align: center; 
+            background-color: #e7f3fe; 
+            padding: 10px 0; 
+            color: #007bff; 
+        }
+        .features {
+            margin-top: 20px; 
+            padding: 15px; 
+            border-top: 2px solid #007bff; 
+        }
+        .features h2 {
+            font-size: 20px; 
+            margin-bottom: 15px; 
+            color: #333; 
+        }
+        .features ul {
+            list-style-type: disc; 
+            padding-left: 20px; 
+        }
+        .features ul li {
+            margin-bottom: 10px; 
+            color: #555; 
+            font-size: 16px; 
+        }
+
+        /* 新增的图片放大效果样式 */
+        .product-image-container {
+            text-align: center; 
+            margin-top: 20px;
+            overflow: hidden; /* 确保超出的部分被隐藏 */
+        }
+        .product-image-container img {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s; /* 添加过渡效果 */
+        }
+        .product-image-container img:hover {
+            transform: scale(1.2); /* 悬停时放大 */
+        }
+
+        /* 响应式设计 */
+        @media screen and (max-width: 768px) {
+            .header-container {
+                flex-direction: column; 
+                align-items: center;
+            }
+            .product-image, .info {
+                margin-right: 0; 
+                margin-bottom: 20px; 
+            }
+            h1 {
+                font-size: 24px; 
+            }
+            a.button, .button.contact {
+                padding: 10px 20px; 
+                width: auto; /* 小屏幕下为自适应宽度 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                </div>
+                <div class="col-md-9">
+                    <div class="tel">9：00~17：00服务热线：<span>023-66298735</span></div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="service.html">服务项目</a></li>
+                            <li><a href="training.html">产品</a></li>
+                            <li class="active"><a href="team.html">精英团队</a></li>
+                            <li><a href="case.html">案例展示</a></li>
+                            <!-- <li></li> -->
+                            <li><a href="comment.html">客户评价</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="navigation-bar" style="position: fixed; bottom: 650px; right: 340px;">
+    <a class="btn btn-default" href="training.html">返回上一级</a>
+</div>
+<div class="container">
+    <div class="header-container">
+        <!-- 使用<img>标签展示产品图片 -->
+        <img class="product-image" src="images/CP/chanpin2.png" alt="数字化复合微量润滑外冷系统">
+        <div class="info">
+            <h1>SW01微型微量润滑系统</h1>
+            <p>产品名称：SW01微型微量润滑设备</p>
+            <p>产品分类：微量润滑设备</p>
+          
+            <div class="contact-info">
+                <p>Email: <a href="mailto:826273670@qq.com">826273670@qq.com</a></p>
+                <p>服务热线: <a href="tel:023-66298735">023-66298735</a></p>
+            </div>
+            <div class="button-container" style="margin-top: 30px; margin-bottom: 30px;">
+                <a href="#" class="button">立即咨询</a>
+                <a href="#" class="button contact">联系我们</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <div class="header">产品详细</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>产品名称</th>
+                    <td>SW01微型微量润滑设备</td>
+                    <th>产品型号</th>
+                    <td>SW01</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>工作气压</td>
+                    <td>0.5MPa～0.8MPa</td>
+                    <td>工作环境温度 / 湿度</td>
+                    <td>-15℃～+45℃/ ≤85%rH</td>
+                </tr>
+                <tr>
+                    <td>气源接入口</td>
+                    <td>Φ12mm</td>
+                    <td>气源接口</td>
+                    <td>Φ12mm</td>
+                </tr>
+                <tr>
+                    <td>供电电压</td>
+                    <td>AC220/DC24V</td>
+                    <td>整机功率</td>
+                    <td>10W</td>
+                </tr>
+                <tr>
+                    <td>外形尺寸</td>
+                    <td>260*180*380</td>
+                    <td>重量</td>
+                    <td>约8KG</td>
+                </tr>
+                <tr>
+                    <td>喷管数量</td>
+                    <td>1根</td>
+                    <td>耗油量</td>
+                    <td>20~100ml/h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="features">
+            <h2>产品优势</h2>
+            <ul>
+                <li>1.取代传统冷却液，降低环境污染;</li>
+                <li>2.提高机械加工工件质量;</li>
+                <li>3.增强刀具使用寿命;</li>
+                <li>4.提高生产效率。</li>
+            </ul>
+        </div>
+
+        <!-- 添加产品外观图 -->
+        <div class="product-image-container">
+            <img src="images/CP1/SW011.jpg" alt="数字化复合微量润滑外冷系统外观图" ondblclick="openImage()">
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <span>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我们</a>
+            <a href="team.html">精英团队</a>
+            <!-- -->
+            <a href="evaluation.html">客户评价</a>
+            <a href="contact.html">联系我们</a>
+        </span>
+        <span>联系地址：重庆市巴南区界石镇石桂大道16号1幢 &nbsp;&nbsp; 联系方式：023-66298735</span>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例展示</title>
+
+    <link rel="stylesheet" href="css/case-al.css">   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/ai-assistant.css">
+    <link href="css/case.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .video-container {
+            width: 1200px; /* 外框架宽度 */
+            height: 600px; /* 外框架高度 */
+            overflow: hidden; /* 隐藏超出部分 */
+            position: relative; /* 位置相对 */
+            border: 1px solid #ccc; /* 可选: 为外框架添加边框 */
+        }
+        
+        .video-wrapper {
+            width: 100%; /* 让视频容器宽度为100% */
+            height: 100%; /* 让视频容器高度为100% */
+            display: flex; /* 使用flexbox对齐 */
+            justify-content: center; /* 水平居中 */
+            align-items: flex-start; /* 垂直对齐到顶部 */
+            padding-top: 0; /* 将顶部内边距设置为0，进一步向上移动视频 */
+            margin-top: 0; /* 通过设置负的外边距进一步向上移动 */
+        }
+
+        video {
+            max-width: 100%; /* 限制视频最大宽度为100% */
+            max-height: 95%; /* 限制视频最大高度为100% */
+            width: auto; /* 让视频宽度自动 */
+            height: auto; /* 让视频高度自动 */
+        }
+    </style>
+</head>
+
+<body>
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                </div>
+                <div class="col-md-9">
+                    <div class="tel">9：00~17：00服务热线：<span>023-66298735</span></div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="service.html">服务项目</a></li>
+                            <li><a href="training.html">产品</a></li>
+                            <li><a href="team.html">精英团队</a></li>
+                            <li><a href="case.html">案例展示</a></li>
+                            <li class="active"><a href="case.html">案例展示</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<ul class="breadcrumb">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="case.html">案例展示</a></li>
+    <li>MQL+车床(属于轴类加工)</li>
+</ul>
+
+<div class="video-container">
+    <div class="video-title">MQL加工</div>
+    <div class="video-wrapper">
+        <video src="video/mql/5.mp4" controls autoplay muted>
+            您的浏览器不支持视频标签。
+        </video>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <span>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我们</a>
+            <a href="team.html">精英团队</a>
+            <a href="news.html">行业资讯</a>
+            <a href="case.html">案例展示</a>
+            <a href="contact.html">联系我们</a>
+        </span>
+        <span>联系地址：重庆市巴南区界石镇石桂大道16号1幢   &nbsp;&nbsp;   联系方式：023-66298735</span>
+    </div>
+</footer>
+
+<script src="js/ai-assistant.js"></script>
+
+</body>
+</html>

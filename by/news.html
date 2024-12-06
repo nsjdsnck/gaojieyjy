@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>行业资讯</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/page.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="iconfont/iconfont.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="css/ai-assistant.css">
+<link href="css/news.css" rel="stylesheet">
+   
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.SuperSlide.js" type="text/javascript"></script>
+<script src="js/NSW_Index.js"></script>
+
+</head>
+
+<body>
+<div class="ai-assistant" id="aiAssistant">
+    <button class="ai-toggle" aria-label="打开AI助手">
+        <img src="images/58.jpg" alt="58同城AI助手" class="ai-icon">
+    </button>
+    
+    <div class="ai-chat-window hidden">
+        <div class="ai-chat-header">
+            <h3>AI智能助手</h3>
+            <button class="close-chat" aria-label="关闭对话">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="ai-chat-messages" id="chatMessages">
+            <!-- 消息内容区域 -->
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="userInput" placeholder="请输入您的问题...">
+            <button class="send-message" aria-label="发送消息">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                </div>
+                <div class="col-md-9">
+                    <div class="tel">9：00~17：00服务热线：<span>023-66298735</span></div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="service.html">服务项目</a></li>
+                            <li><a href="training.html">产品</a></li>
+                            <li><a href="team1.html">精英团队</a></li>
+                            <li><a href="case.html">案例展示</a></li>
+                            <li class="active"></li>
+                            <li><a href="comment.html">客户评价</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>行业资讯</h1>
+            </div>
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="active">行业资讯</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="news-item">
+                    <div class="news-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="news-image">
+                                    <img src="images/news1.jpg" alt="新闻图片" class="img-responsive">
+                                    <div class="news-date">
+                                        <span class="day">20</span>
+                                        <span class="month">三月</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="news-content">
+                                    <h3><a href="news-detail.html">绿色加工技术的最新进展</a></h3>
+                                    <div class="news-meta">
+                                        <span><i class="fa fa-user"></i> 管理员</span>
+                                        <span><i class="fa fa-eye"></i> 258次浏览</span>
+                                        <span><i class="fa fa-comments"></i> 23条评论</span>
+                                    </div>
+                                    <p class="news-excerpt">绿色加工技术在现代制造业中扮演着重要角色。本文探讨了绿色加工的最新进展及其在工业中的应用...</p>
+                                    <a href="news-detail.html" class="btn-read-more">阅读更多 <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="news-image">
+                                    <img src="images/news2.jpg" alt="新闻图片" class="img-responsive">
+                                    <div class="news-date">
+                                        <span class="day">18</span>
+                                        <span class="month">三月</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="news-content">
+                                    <h3><a href="news-detail.html">清洁加工与可持续发展</a></h3>
+                                    <div class="news-meta">
+                                        <span><i class="fa fa-user"></i> 管理员</span>
+                                        <span><i class="fa fa-eye"></i> 186次浏览</span>
+                                        <span><i class="fa fa-comments"></i> 15条评论</span>
+                                    </div>
+                                    <p class="news-excerpt">清洁加工技术在实现可持续发展目标中发挥着关键作用。本文介绍了清洁加工的基本原理和应用案例...</p>
+                                    <a href="news-detail.html" class="btn-read-more">阅读更多 <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="news-image">
+                                    <img src="images/news3.jpg" alt="新闻图片" class="img-responsive">
+                                    <div class="news-date">
+                                        <span class="day">15</span>
+                                        <span class="month">三月</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="news-content">
+                                    <h3><a href="news-detail.html">MQL设备在现代制造中的应用</a></h3>
+                                    <div class="news-meta">
+                                        <span><i class="fa fa-user"></i> 管理员</span>
+                                        <span><i class="fa fa-eye"></i> 312次浏览</span>
+                                        <span><i class="fa fa-comments"></i> 28条评论</span>
+                                    </div>
+                                    <p class="news-excerpt">微量润滑（MQL）设备在减少加工过程中的润滑剂使用方面表现出色。本文分析了MQL设备的优势和应用...</p>
+                                    <a href="news-detail.html" class="btn-read-more">阅读更多 <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="news-image">
+                                    <img src="images/news4.jpg" alt="新闻图片" class="img-responsive">
+                                    <div class="news-date">
+                                        <span class="day">10</span>
+                                        <span class="month">三月</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="news-content">
+                                    <h3><a href="news-detail.html">压干式清洁切削系统的创新</a></h3>
+                                    <div class="news-meta">
+                                        <span><i class="fa fa-user"></i> 管理员</span>
+                                        <span><i class="fa fa-eye"></i> 198次浏览</span>
+                                        <span><i class="fa fa-comments"></i> 18条评论</span>
+                                    </div>
+                                    <p class="news-excerpt">压干式清洁切削系统在提高加工效率和减少环境影响方面具有显著优势。本文探讨了该系统的创新应用...</p>
+                                    <a href="news-detail.html" class="btn-read-more">阅读更多 <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="news-image">
+                                    <img src="images/news5.jpg" alt="新闻图片" class="img-responsive">
+                                    <div class="news-date">
+                                        <span class="day">05</span>
+                                        <span class="month">三月</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="news-content">
+                                    <h3><a href="news-detail.html">纳米级雾化系统设备的突破</a></h3>
+                                    <div class="news-meta">
+                                        <span><i class="fa fa-user"></i> 管理员</span>
+                                        <span><i class="fa fa-eye"></i> 276次浏览</span>
+                                        <span><i class="fa fa-comments"></i> 22条评论</span>
+                                    </div>
+                                    <p class="news-excerpt">纳米级雾化系统设备在精密加工中的应用日益广泛。本文介绍了该设备的技术突破和实际应用...</p>
+                                    <a href="news-detail.html" class="btn-read-more">阅读更多 <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="news-image">
+                                    <img src="images/news6.jpg" alt="新闻图片" class="img-responsive">
+                                    <div class="news-date">
+                                        <span class="day">01</span>
+                                        <span class="month">三月</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="news-content">
+                                    <h3><a href="news-detail.html">油气雾化转换系统的前景</a></h3>
+                                    <div class="news-meta">
+                                        <span><i class="fa fa-user"></i> 管理员</span>
+                                        <span><i class="fa fa-eye"></i> 234次浏览</span>
+                                        <span><i class="fa fa-comments"></i> 19条评论</span>
+                                    </div>
+                                    <p class="news-excerpt">油气雾化转换系统在提高加工效率和降低成本方面具有重要意义。本文分析了该系统的未来发展前景...</p>
+                                    <a href="news-detail.html" class="btn-read-more">阅读更多 <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="pagination-wrapper">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="sidebar-widget search-widget">
+                        <form action="#" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="搜索新闻...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-widget category-widget">
+                        <h3 class="widget-title">新闻分类</h3>
+                        <ul class="category-list">
+                            <li>
+                                <a href="#">
+                                    公司新闻 
+                                    <span class="count">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    行业动态 
+                                    <span class="count">25</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    技术创新 
+                                    <span class="count">18</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    案例分享 
+                                    <span class="count">15</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget popular-posts-widget">
+                        <h3 class="widget-title">热门新闻</h3>
+                        <div class="popular-post">
+                            <div class="post-thumb">
+                                <img src="images/news-thumb1.jpg" alt="热门新闻">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">数字化转型成效显著</a></h4>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-calendar"></i> 2024-03-15</span>
+                                    <span><i class="fa fa-eye"></i> 325</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <div class="post-thumb">
+                                <img src="images/news-thumb2.jpg" alt="热门新闻">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">智能制造新技术应用</a></h4>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-calendar"></i> 2024-03-12</span>
+                                    <span><i class="fa fa-eye"></i> 286</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <span>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我们 </a>
+            <a href="team.html">精英团队</a>
+            <!-- -->
+            <a href="evaluation.html">客户评价</a>
+            <a href="contact.html">联系我们</a>
+        </span>
+        <span>联系地址：重庆市巴南区界石镇石桂大道16号1幢   &nbsp;&nbsp;   联系方式：023-66298735</span>
+    </div>
+</footer>
+
+<script src="js/ai-assistant.js"></script>
+
+</body>
+</html> 

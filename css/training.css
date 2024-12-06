@@ -1,0 +1,237 @@
+/* 产品卡片样式 */
+.product-card {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(33, 147, 176, 0.2);
+    transform: translateY(-8px);
+}
+
+.product-card .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 147, 176, 0.1);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.product-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #2193b0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.product-card:hover h3::after {
+    width: 50px;
+}
+
+.product-card p {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover p {
+    background: #e8f6f9;
+    color: #2193b0;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(33, 147, 176, 0.2);
+}
+
+.view-details:hover {
+    background: linear-gradient(45deg, #1c7a94, #5ab9cf);
+    box-shadow: 0 5px 15px rgba(33, 147, 176, 0.4);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+/* 标题样式 */
+.head {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 32px;
+    color: #333;
+}
+
+.head span {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.brand p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 响应式布局 */
+@media (max-width: 991px) {
+    .product-card img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* 添加加载动画 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+/* 添加模态框相关样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* 添加图片悬停效果 */
+.zoomable-image {
+    cursor: zoom-in;
+}
+
+/* 响应式调整 */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* 添加图片点击效果 */
+.img-container img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}

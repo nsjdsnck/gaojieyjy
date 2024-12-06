@@ -1,0 +1,27 @@
+/* 响应式容器 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-medium);
+}
+
+/* 网格系统 */
+.grid {
+  display: grid;
+  gap: var(--spacing-medium);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* 弹性布局 */
+.flex {
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+/* 响应式断点 */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+} 

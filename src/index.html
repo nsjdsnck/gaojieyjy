@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站标题</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="fonts/your-main-font.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- 添加图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- AI助手浮动按钮 -->
+    <div class="ai-assistant" id="aiAssistant">
+        <button class="ai-toggle" aria-label="打开AI助手">
+            <img src="./images/58.jpg" alt="58同城AI助手" class="ai-icon">
+        </button>
+        
+        <div class="ai-chat-window hidden">
+            <div class="ai-chat-header">
+                <h3>58同城AI助手</h3>
+                <button class="close-chat" aria-label="关闭对话">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="ai-chat-messages" id="chatMessages">
+                <!-- 消息内容区域 -->
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="userInput" placeholder="请输入您的问题...">
+                <button class="send-message" aria-label="发送消息">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="main-nav container">
+            <!-- 导航内容 -->
+        </nav>
+    </header>
+
+    <main>
+        <article class="hero">
+            <div class="container">
+                <h1>主标题</h1>
+                <p>副标题描述</p>
+            </div>
+        </article>
+
+        <section class="features">
+            <!-- 特性展示 -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <!-- 添加 AI 助手的 JavaScript -->
+    <script src="./js/ai-assistant.js"></script>
+</body>
+</html> 

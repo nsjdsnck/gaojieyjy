@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>精英团队</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/page.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="iconfont/iconfont.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="css/ai-assistant.css">
+<link href="css/team.css" rel="stylesheet">
+<link rel="stylesheet" href="css/team.css">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<style>
+    /* 优化团队页面样式 */
+    .team-section {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+
+    .team-member {
+        text-align: center;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-image-wrapper {
+        width: 100%;
+        height: 400px; /* 设置固定高度 */
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-member img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain; /* 保持图片比例 */
+    }
+
+    .team-info {
+        padding: 20px;
+    }
+
+    .team-member h3 {
+        font-size: 1.25rem;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .team-member p {
+        color: #777;
+        font-size: 0.9rem;
+    }
+
+    .page-title {
+        background-color: #3498db;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .page-title h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .breadcrumb {
+        background: none;
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .breadcrumb li {
+        display: inline;
+        font-size: 0.9rem;
+    }
+
+    .breadcrumb li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .breadcrumb li.active {
+        color: #ddd;
+    }
+</style>
+
+</head>
+
+<body>
+<div class="ai-assistant" id="aiAssistant">
+    <button class="ai-toggle" aria-label="打开AI助手">
+        <img src="images/58.jpg" alt="58同城AI助手" class="ai-icon">
+    </button>
+    
+    <div class="ai-chat-window hidden">
+        <div class="ai-chat-header">
+            <h3>AI智能助手</h3>
+            <button class="close-chat" aria-label="关闭对话">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="ai-chat-messages" id="chatMessages">
+            <!-- 消息内容区域 -->
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="userInput" placeholder="请输入您的问题...">
+            <button class="send-message" aria-label="发送消息">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                </div>
+                <div class="col-md-9">
+                    <div class="tel">9：00~17：00服务热线：<span>023-66298735</span></div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="service.html">服务项目</a></li>
+                            <li><a href="training.html">产品</a></li>
+                            <li class="active"><a href="team1.html">精英团队</a></li>
+                            <li><a href="case.html">案例展示</a></li>
+                            <!-- <li></li> -->
+                            <li><a href="comment.html">客户评价</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="page-title">
+    <div class="container">
+        
+        <div class="class_tab">
+            <a href="team1.html" >开创者</a><a  class="cur" href="team.html" >专家团队</a>
+        </div>
+    </div>
+</div>
+<section class="team-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <div class="team-image-wrapper">
+                        <img src="images/zj11.png" alt="张根保">
+                    </div>
+                    <div class="team-info">
+                        <h3><a href="zhanggb.html" style="color: #2c3e50; text-decoration: none; font-size: 2em;">张根保</a></h3>
+                        <h3><a href="zhanggb.html" style="color: #2193b0; text-decoration: none; font-size: 2em;">绿色制造首席科学家</a></h3>
+                    </div>
+                </div>
+                <a href="zhanggb.html">
+                    <button class="detail-button1" style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: -20px;">查看详情</button>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <div class="team-image-wrapper">
+                        <img src="images/zj12.jpg" alt="应文俊" width="200px" height="500px">
+                    </div>
+                    <div class="team-info">
+                        <h3><a href="yingwenjun.html" style="color: #2c3e50; text-decoration: none; font-size: 2em;">应文俊</a></h3>
+                        <h3><a href="yingwenjun.html" style="color: #2193b0; text-decoration: none;font-size: 2em;">智能制造首席科学家</a></h3>
+                    </div>
+                </div>
+                <a href="yingwenjun.html">
+                    <button class="detail-button1" style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: -20px;">查看详情</button>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <div class="team-image-wrapper">
+                        <img src="images/zj13.png" alt="雍发权">
+                    </div>
+                    <div class="team-info">
+                        <h3><a href="yongfaquan.html" style="color: #2c3e50; text-decoration: none; font-size: 2em;">雍发权</a></h3>
+                        <h3><a href="yongfaquan.html" style="color: #2193b0; text-decoration: none; font-size: 2em;">智能制造首席科学家</a></h3>
+                    </div>
+                </div>
+                <a href="yongfaquan.html">
+                    <button class="detail-button1" style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: -20px;">查看详情</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer">
+    <div class="container">
+        <span>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我们 </a>
+            <a href="team.html">精英团队</a>
+            <!-- -->
+            <a href="evaluation.html">客户评价</a>
+            <a href="contact.html">联系我们</a>
+        </span>
+        <span>联系地址：重庆市巴南区界石镇石桂大道16号1幢   &nbsp;&nbsp;   联系方式：023-66298735</span>
+    </div>
+</footer>
+
+<script src="js/ai-assistant.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px; /* 向右移动200px */
+}
+.video-wrapper {
+    width: 400px; /* 设置固定宽度 */
+    height: 300px; /* 设置固定高度 */
+    border: 1px solid #ccc; /* 边框样式 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* 相对定位以定位标题 */
+    overflow: hidden; /* 避免溢出 */
+}
+.video-title {
+    position: absolute; /* 绝对定位，方便置于视频上 */
+    top: 10px; /* 顶部间距 */
+    left: 10px; /* 左侧间距 */
+    color: white; /* 文字颜色 */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景透明 */
+    padding: 5px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+}
+.vs {
+    font-size: 48px; /* VS文本的字体大小 */ 
+    margin: 0 20px; /* 两侧的间距 */
+    color: #f31010; /* VS文本颜色 */
+}
+video {
+    width: 100%; /* 视频宽度自适应 */
+    height: 100%; /* 视频高度自适应 */
+}
+.button-container {
+display: flex; /* 使用flexbox布局 */
+justify-content: center; /* 居中对齐按钮 */
+margin: 40px 0; /* 上下间距保持不变 */
+width: 1200px; /* 设置按钮容器的宽度 */
+margin-left: 300px; /* 向右移动200px */
+}
+
+.play-button {
+padding: 10px 20px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 300px; /* 为播放按钮设置右边距 */
+}
+
+.pause-button {
+padding: 10px 20px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}

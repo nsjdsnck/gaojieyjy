@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>关于我们-公司介绍</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/page.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="iconfont/iconfont.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/header-tou.css">
+   
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.SuperSlide.js" type="text/javascript"></script>
+<script src="js/NSW_Index.js"></script>
+
+
+<script>
+    // 获取视频元素
+    const video = document.getElementById('video/gaojie.mp4');
+
+    // 创建Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 当视频在视口内，自动播放
+                video.play();
+            } else {
+                // 当视频不在视口内，暂停
+                video.pause();
+            }
+        });
+    });
+
+    // 观察视频元素
+    observer.observe(video);
+</script>
+</head>
+
+<body>
+
+	<header id="header">
+		<nav class="navbar navbar-inverse" role="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+					</div>
+					<div class="col-md-9">
+						<div class="tel">9：00~17：00服务热线：<span>023-66298735</span></div>
+						<div class="collapse navbar-collapse navbar-right">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">首页</a></li>
+								<li class="active"><a href="about.html">关于我们</a></li>
+								<li><a href="service.html">服务项目</a></li>
+								<li><a href="training.html">产品</a></li>
+								<li><a href="team1.html">精英团队</a></li>
+								<li><a href="case.html">案例展示</a></li>
+								<!-- <li></li>  -->
+								<li><a href="comment.html">客户评价</a></li> 
+								<li><a href="contact.html">联系我们</a></li>                      
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+    
+    
+	<!--banner-->
+<div class="banner2">
+	<p style="background:url(images/gywm.gif) no-repeat center; background-size:cover;"></p>
+</div>
+<div class="clearfix"></div>
+<section class="container">
+<div class="head">公司简介<span>About us</span></div>
+    <div class="class_tab">
+        <a class="cur" href="about.html" >公司介绍</a><a href="honor.html" >资质荣誉</a><a href="honor1-1.html" >专利</a>
+    </div>
+	<div class="content" style="padding:0; line-height:45px;">
+		<p>
+			<center>
+				<video src="video/gaojie.mp4" 
+					   controls 
+					   class="img-responsive" 
+					   autoplay="autoplay"
+					   onended="this.currentTime=0;this.pause();">
+				</video>
+			</center>
+			<div style="font-size: 24px; letter-spacing: 2px; margin-top: 30px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;重庆高洁绿色机械设备智能制造研究院有限公司成立于2021年8月，是巴南区政府招商引资公司。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;高洁研究院可为制造企业提供机床绿色智能化改造升级以及绿色智能数字产线/工厂的整体解决方案致力成为全球绿色智能制造数字产线/工厂标准化和定制化服务商导者。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;研究院在2023年10月成为高新技术企业，在2024年成为重庆市"专精特新"企业。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;公司与重庆大学、重庆交通大学、中科院等高校和科研院所长期开展项目合作，成功研制了我国第一台零下90度的冷风射流机，国内第一台微米级微量润滑系统，产品均满足工业生产要求，生产体系已通过ISO9001国际质量体系标准申请。
+			</div>
+		</p>
+	</div>
+    <div class="clearfix"></div>
+</section>
+
+
+<!-- 安全 Start -->
+<section class="service-v1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="item">
+					<div class="icon">
+						<i class="iconfont">&#xe620;</i>
+					</div>
+					<div class="text">
+						<div class="inner">
+						<h3>正规公司，值得信赖</h3>
+						<p></p>
+						</div>
+					</div>							
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="item">
+					<div class="icon">
+						<i class="iconfont">&#xe633;</i>
+					</div>
+					<div class="text">
+						<div class="inner">
+						<h3>安全保障，持证上岗</h3>
+						<p></p>
+						</div>
+					</div>							
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="item">
+					<div class="icon">
+						<i class="iconfont">&#xe614;</i>
+					</div>
+					<div class="text">
+						<div class="inner">
+						<h3>异地服务，更贴心</h3>
+						<p></p>
+						</div>
+					</div>							
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--footer-->
+<footer id="footer">
+	<div class="container">
+    	<span><a href="index.html">首页</a><a href="about.html" >关于我们 </a><a href="team.html">精英团队</a>
+			
+			<a href="evaluation.html">客户评价</a><a href="contact.html">联系我们</a></span>
+        <span>联系地址：重庆市巴南区界石镇石桂大道16号1幢   &nbsp;&nbsp;   联系方式：023-66298735<br>
+<!-- Copyright © 2005-2017 All rights reserved.   京ICP备10012705号-8 -->
+ </span>
+	</div>
+</footer>
+
+<div style="text-align: center; position: fixed; bottom: 0; width: 100%; line-height: 150%; background: #f5f5f5; border-top: 1px solid #ddd;">  <a style="color:blue" target="_blank" href="https://ibaotu.com/ui/">  </a>
+	</div>
+
+</div>
+</div>
+
+</body>
+</html>

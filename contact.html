@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>联系我们</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/page.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="iconfont/iconfont.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/contact.css">
+   
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.SuperSlide.js" type="text/javascript"></script>
+<script src="js/NSW_Index.js"></script>
+
+<!-- 在 head 标签内，删除高德地图API，替换为腾讯地图 API -->
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=OZMBZ-KRSEZ-WSTXN-TP5WF-5YRYE-UPBTE"></script>
+
+<!-- 在 head 标签内添加样式 -->
+<style>
+    .product-image {
+        max-width: 291px;  /* 原来300px减少3% = 300 * 0.97 = 291px */
+        height: auto;      /* 保持图片比例 */
+        cursor: pointer;   /* 鼠标悬停时显示手型 */
+        transition: transform 0.3s;  /* 添加过渡效果 */
+    }
+    
+    .product-image:hover {
+        transform: scale(1.05);  /* 鼠标悬停时轻微放大 */
+    }
+</style>
+
+</head>
+<!--/head-->
+
+
+<body>
+<header id="header">
+	<nav class="navbar navbar-inverse" role="banner">
+		<div class="container">
+        	<div class="row">
+			<div class="col-md-3 navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"  class="img-responsive"></a>
+			</div>
+            <div  class="col-md-9">
+            <div class="tel">9：00~17：00服务热线：<span>023-66298735</span></div>
+			<div class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">首页</a></li>
+                    <li><a href="about.html" >关于我们</a></li>
+					<!--<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们 <i class="fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu">
+						<li><a href="about.html">公司介绍</a></li>
+						<li><a href="honor.html">资质荣誉</a></li>
+						<li><a href="video.html">视频展示</a></li>
+						</ul>
+					</li>-->
+                    <li><a href="service.html" >服务项目</a></li>
+					<li><a href="training.html">产品</a></li> 
+					<li><a href="team1.html">精英团队</a></li>
+					<li><a href="case.html">案例展示</a></li>
+					<!-- <li></li>  -->
+                    <li><a href="comment.html">客户评价</a></li> 
+                    <li class="active"><a href="contact.html">联系我们</a></li>                      
+				</ul>
+			</div>
+            </div>
+            </div>
+		</div>
+	</nav>
+</header>
+    
+<!--banner-->
+<div class="banner2">
+	<img src="images/gywm.jpg" alt="">
+</div> 
+
+<section class="container" style= "margin-top: 150px;">
+    <div class="c_title">
+        <font>联系我们</font> 
+        <span>当前位置：<a href="index.html">首页</a>&gt; 联系我们</span>
+		
+    </div>
+
+    <div class="contact">
+		<div class="fl">
+			<ul style="list-style-type: none; padding: 0; font-size: 16px; line-height: 1.6; color: #333;">
+				<li style="margin-bottom: 10px;">商家名称：重庆洁绿色机械设备智能制造研究院有限公司</li>
+				<li style="margin-bottom: 10px;">联  系  人：xxx</li>
+				<li style="margin-bottom: 10px;">电子邮箱：826273670@qq.com</li>
+				<li style="margin-bottom: 10px;">联系电话：023-66298735</li>
+				<li style="margin-bottom: 10px;">联系电话：xxxxxxxxxxxxxxx</li>
+				<li style="margin-bottom: 10px;">联系地址：重庆市巴南区界石镇石桂大道16号1幢</li>
+				<li>服务区域：全国</li>
+			</ul>
+		</div>
+		<div class="fr">
+			<!-- <img src="images/gzhao.jpg" alt="公司图片"> -->
+			<div style="text-align: center; margin-top: 15px;">
+				<img src="images/gzhao.jpg" alt="扫码关注" style="max-width: 200px; border-radius: 8px;"> <!-- 扫码图，需替换为二维码图片路径 -->
+				<p style="margin-top: 5px; font-size: 14px; color: #333;">扫码关注我们</p>
+			</div>
+		</div>
+		
+    </div>
+
+    <!-- 修改地图容器的 id -->
+    <div id="map" style="width: 100%; height: 400px; margin-top: 30px; border-radius: 8px;"></div>
+</section>
+
+<!-- 安全 Start -->
+<section class="service-v1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="item">
+					<div class="icon">
+						<i class="iconfont">&#xe620;</i>
+					</div>
+					<div class="text">
+						<div class="inner">
+						<h3>正规公司，值得信赖</h3>
+						<p></p>
+						</div>
+					</div>							
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="item">
+					<div class="icon">
+						<i class="iconfont">&#xe633;</i>
+					</div>
+					<div class="text">
+						<div class="inner">
+						<h3>安全保障，持证上岗</h3>
+						<p></p>
+						</div>
+					</div>							
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="item">
+					<div class="icon">
+						<i class="iconfont">&#xe614;</i>
+					</div>
+					<div class="text">
+						<div class="inner">
+						<h3>异地服务，更贴心</h3>
+						<p></p>
+						</div>
+					</div>							
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--footer-->
+<footer id="footer">
+	<div class="container">
+    	<span><a href="index.html">首页</a><a href="about.html" >关于我们 </a><a href="team.html">精英团队</a><a href="comment.html">客户评价</a><a href="contact.html">联系我们</a></span>
+        <!-- <a href="service.html" >服务项目</a><a href="training.html">教育培训</a> -->
+		<span>联系地址：重庆市巴南区界石镇石桂大道16号1幢   &nbsp;&nbsp;   联系方式：023-66298735<br>
+<!-- Copyright © 2005-2017 All rights reserved.   京ICP备10012705号-8 -->
+ </span>
+	</div>
+</footer>
+<div style="text-align: center; position: fixed; bottom: 0; width: 100%; line-height: 150%; background: #f5f5f5; border-top: 1px solid #ddd;">  <a style="color:blue" target="_blank" href="https://ibaotu.com/ui/">  </a>
+	</div>
+
+    <!-- 修改腾讯地图初始化脚本中的坐标 -->
+    <script type="text/javascript">
+        window.onload = function() {
+            // 初始化地图，重庆巴南区界石镇石桂大道16号的精确坐标
+            var center = new qq.maps.LatLng(29.395442,106.618503);
+            var map = new qq.maps.Map(document.getElementById('map'), {
+                center: center,
+                zoom: 30,  // 调整缩放级别以更好地显示位置
+                mapStyleId: 'style1'  // 添加地图样式
+            });
+            
+            // 添加标记
+            var marker = new qq.maps.Marker({
+                position: center,
+                map: map,
+                animation: qq.maps.MarkerAnimation.DROP  // 添加标记动画效果
+            });
+            
+            // 创建信息窗体
+            var info = new qq.maps.InfoWindow({
+                map: map
+            });
+            
+            // 设置信息窗体内容
+            info.open();
+            info.setContent('<div style="padding:10px;text-align:center;">' +
+                '<h4 style="margin:0 0 5px 0;color:#cc5522;">重庆高洁绿色机械设备智能制造研究院有限公司</h4>' +
+                '<p style="margin:0;font-size:12px;">地址：重庆市巴南区界石镇石桂大道16号1幢</p>' +
+                '</div>');
+            info.setPosition(center);
+            
+            // 添加缩放控件
+            var control = new qq.maps.ZoomControl({
+                position: qq.maps.ControlPosition.RIGHT_BOTTOM
+            });
+            map.addControl(control);
+        }
+    </script>
+</body>
+</html>

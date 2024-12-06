@@ -1,0 +1,98 @@
+/* 团队页面样式 */
+.team-hero {
+    background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(46, 204, 113, 0.9));
+    color: white;
+    padding: calc(var(--spacing-large) * 2) 0;
+    text-align: center;
+}
+
+.team-hero h1 {
+    font-size: var(--font-size-h1);
+    margin-bottom: var(--spacing-medium);
+}
+
+/* 团队成员卡片 */
+.team-card {
+    text-align: center;
+    overflow: hidden;
+}
+
+.team-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: var(--spacing-medium) auto;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+}
+
+.team-info {
+    padding: var(--spacing-medium);
+}
+
+.team-info h3 {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-small);
+}
+
+.position {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-small);
+}
+
+/* 团队文化部分 */
+.team-culture {
+    background-color: var(--background-color);
+    padding: calc(var(--spacing-large) * 2) 0;
+}
+
+.culture-grid {
+    margin-top: var(--spacing-large);
+}
+
+.culture-item {
+    text-align: center;
+    padding: var(--spacing-medium);
+}
+
+.culture-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .team-hero {
+        padding: var(--spacing-large) 0;
+    }
+    
+    .team-card img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .culture-grid {
+        flex-direction: column;
+    }
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+    .team-card {
+        background-color: var(--dark-card-bg);
+    }
+    
+    .team-info h3 {
+        color: var(--dark-text);
+    }
+    
+    .team-culture {
+        background-color: var(--dark-background);
+    }
+} 

@@ -1,0 +1,604 @@
+/* 团队页面样式优化 */
+.team-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+    /* 优化团队页面样式 */
+    .team-section {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+
+    .team-member {
+        text-align: center;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-image-wrapper {
+        width: 100%;
+        height: 400px; /* 设置固定高度 */
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-member img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain; /* 保持图片比例 */
+    }
+
+    .team-info {
+        padding: 20px;
+    }
+
+    .team-member h3 {
+        font-size: 1.25rem;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .team-member p {
+        color: #777;
+        font-size: 0.9rem;
+    }
+
+    .page-title {
+        background-color: #3498db;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .page-title h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .breadcrumb {
+        background: none;
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .breadcrumb li {
+        display: inline;
+        font-size: 0.9rem;
+    }
+
+    .breadcrumb li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .breadcrumb li.active {
+        color: #ddd;
+    }
+
+.team-member {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+}
+
+.team-member:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.team-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 140%; /* 调整为7:5的比例 */
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(33,147,176,0.05), rgba(109,213,237,0.05));
+}
+
+.team-member img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%; /* 控制图片最大宽度 */
+    max-height: 95%; /* 控制图片最大高度 */
+    width: auto; /* 自动宽度 */
+    height: auto; /* 自动高度 */
+    object-fit: contain; /* 保持图片比例 */
+    transition: all 0.6s ease;
+    cursor: pointer; /* 添加指针样式 */
+}
+
+.team-member:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.team-info {
+    position: relative;
+    padding: 25px 20px;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.team-info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+}
+
+.team-member h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.team-member p {
+    color: #2193b0;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* 添加社交媒体链接 */
+.team-social {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .team-social {
+    right: 20px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2193b0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #2193b0;
+    color: #fff;
+    transform: translateX(-5px);
+}
+
+/* 导航标签样式优化 */
+.class_tab {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.class_tab a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 0 5px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,0.9);
+}
+
+.class_tab a:hover {
+    transform: translateY(-2px);
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.class_tab a.cur {
+    color: #fff;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    box-shadow: 0 5px 20px rgba(33,147,176,0.3);
+    font-weight: 600;
+}
+
+/* 添加动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team-member {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.team-member:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.team-member:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* 添加悬浮卡片效果 */
+.team-member::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(33,147,176,0.2), rgba(109,213,237,0.2));
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover::after {
+    opacity: 1;
+}
+
+/* 响应式优化 */
+@media (max-width: 991px) {
+    .team-image-wrapper {
+        padding-top: 140%; /* 保持相同比例 */
+    }
+    
+    .team-member img {
+        max-width: 85%; /* 稍微缩小 */
+    }
+    
+    .class_tab {
+        margin: 0 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-info {
+        padding: 20px 15px;
+    }
+    
+    .team-member h3 {
+        font-size: 20px;
+    }
+    
+    .team-member p {
+        font-size: 14px;
+    }
+    
+    .class_tab {
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+    .class_tab a {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px;
+        flex: 1 1 auto;
+        text-align: center;
+        min-width: 120px;
+    }
+    
+    .team-social {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px 0;
+        gap: 15px;
+    }
+    
+    .team-image-wrapper {
+        padding-top: 140%; /* 保持相同比例 */
+    }
+    
+    .team-member img {
+        max-width: 80%; /* 在手机上进一步缩小 */
+    }
+}
+
+/* 董事长页面特定样式 */
+.chairman-profile {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.chairman-image {
+    flex: 0 0 45%;
+    position: relative;
+    max-height: 500px; /* 限制最大高度 */
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(33,147,176,0.05), rgba(109,213,237,0.05));
+}
+
+.chairman-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%; /* 调整图片焦点位置，更好地显示上半身 */
+    transition: transform 0.6s ease;
+}
+
+.chairman-info {
+    flex: 0 0 55%;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中内容 */
+}
+
+.chairman-info h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.chairman-info .position {
+    color: #2193b0;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(33,147,176,0.1);
+}
+
+.chairman-description {
+    text-align: left;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.chairman-achievements {
+    background: rgba(33,147,176,0.05);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.chairman-achievements h3 {
+    color: #2193b0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.chairman-achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chairman-achievements li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.chairman-achievements i {
+    color: #2193b0;
+    margin-right: 10px;
+}
+
+.chairman-quote {
+    position: relative;
+    padding: 30px;
+    margin: 30px 0;
+    background: linear-gradient(135deg, rgba(33,147,176,0.1), rgba(109,213,237,0.1));
+    border-radius: 10px;
+}
+
+.chairman-quote i {
+    color: #2193b0;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.chairman-quote p {
+    font-style: italic;
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.chairman-contact {
+    margin-top: 30px;
+}
+
+.btn-more {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+    background: linear-gradient(135deg, #1c7a94, #5ab8cc);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.btn-more i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-more:hover i {
+    transform: translateX(5px);
+}
+
+/* 特色服务样式优化 */
+.feature-box {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #2193b0;
+    margin-bottom: 20px;
+}
+
+.feature-content h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    color: #666;
+    margin: 0;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .chairman-info {
+        padding: 25px;
+    }
+    
+    .chairman-info h2 {
+        font-size: 28px;
+    }
+    
+    .chairman-quote p {
+        font-size: 16px;
+    }
+    
+    .chairman-achievements {
+        padding: 20px;
+    }
+}
+
+/* 修改董事长页面的图片显示样式 */
+@media (max-width: 991px) {
+    .chairman-profile {
+        flex-direction: column;
+    }
+    
+    .chairman-image {
+        flex: none;
+        height: 400px;
+        max-height: none;
+    }
+    
+    .chairman-info {
+        flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .chairman-image {
+        height: 350px;
+    }
+    
+    .chairman-info {
+        padding: 25px;
+    }
+}
+
+/* 添加悬停时的大图显示 */
+.team-member .full-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.team-member .full-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+/* 添加关闭按钮 */
+.full-image .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.full-image .close-btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: rotate(90deg);
+}

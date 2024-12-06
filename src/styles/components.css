@@ -1,0 +1,71 @@
+/* 按钮样式 */
+.button {
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-family-main);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* 卡片组件 */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  box-shadow: var(--box-shadow);
+}
+
+/* 表单元素 */
+.input {
+  width: 100%;
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-main);
+}
+
+.input:focus {
+  outline: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* 添加跳过导航链接 */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* 改进表单可访问性 */
+.form-group {
+  margin-bottom: var(--spacing-medium);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--spacing-small);
+  font-weight: 500;
+}
